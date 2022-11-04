@@ -1,0 +1,60 @@
+.itemCardContainer {
+    flex-basis: 20%;
+    min-width: 200px;
+    max-width: 20%;
+
+    .itemCardVertical {
+        background-color: #fff;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            width: 75%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: 50% 50%;
+            }
+        }
+
+        &__name {
+            background-color: #e9c46a;
+            font-size: 1.5rem;
+            font-weight: 500;
+            width: 100%;
+            padding: 10px;
+        }
+
+        &__price {
+            background-color: #e9c46a;
+            font-size: 1.2rem;
+            width: 100%;
+            padding: 10px;
+        }
+
+        &__buy {
+            background-color: #e9c46a;
+            width: 100%;
+
+            div {
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+            }
+        }
+
+        &__description {
+            background-color: #e9c46a;
+            width: 100%;
+            padding: 10px;
+            height: fit-content;
+            line-height: 1.3;
+        }
+    }
+}

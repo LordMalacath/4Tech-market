@@ -1,0 +1,14 @@
+.addItem {
+    .container {
+        padding: 40px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+}

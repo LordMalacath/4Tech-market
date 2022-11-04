@@ -1,0 +1,38 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    &__back {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    &__content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+        background-color: #fff;
+        border: 3px solid blue;
+        border-radius: 20px;
+        padding: 30px;
+
+        button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: none;
+        }
+    }
+}

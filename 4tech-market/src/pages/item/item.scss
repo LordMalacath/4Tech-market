@@ -1,0 +1,129 @@
+.item {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    &__name {
+        font-size: 5rem;
+    }
+
+    .preview {
+        display: flex;
+        height: 100%;
+
+        &__left {
+            padding: 15px;
+            flex: 1;
+
+            .imgContainer {
+                height: 100%;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+
+                &__slider {
+                    height: 100%;
+                    display: flex;
+                    border: 3px rgba(128, 128, 128, 0.5) solid;
+                    border-radius: 15px;
+                    overflow: hidden;
+
+                    .imgSlider {
+                        flex: 1;
+                        padding: 20px 0;
+                        display: flex;
+                        height: 100%;
+                        position: relative;
+
+                        &__swap {
+                            z-index: 50;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 100%;
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 2rem;
+                            cursor: pointer;
+                            font-size: 3rem;
+                            font-weight: 800;
+                            color: rgba(255, 255, 255, 0.5);
+
+                        }
+
+                        .leftSwap {
+                            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+                        }
+
+                        .rightSwap {
+                            right: 0;
+                            background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+                        }
+
+                        &__item {
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                                object-position: 50% 50%;
+                            }
+                        }
+                    }
+                }
+
+                &__list {
+                    background-color: #a2d2ff;
+                    height: 100px;
+
+                }
+            }
+        }
+
+        &__right {
+            flex: 1;
+            padding: 15px;
+
+            .infoContainer {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                height: 100%;
+
+                &__stock {
+                    color: green;
+                    font-size: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    height: 50px;
+                }
+
+                .buy {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px;
+                    height: 100px;
+
+                    &__price {
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: #2a9d8f;
+                    }
+                }
+
+                &__description {
+                    background-color: #2a9d8f;
+                    height: 100%;
+                    padding: 30px 60px;
+                }
+            }
+        }
+    }
+}

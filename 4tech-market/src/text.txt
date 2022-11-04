@@ -1,0 +1,39 @@
+name
+Apple iPhone 11 pro 128GB Space Grey
+
+description
+Operating System: iOS 
+Features: 4G Data Capable, E-mail Access, 4K Video Recording, Accelerometer, Bluetooth Enabled, Camera, Fingerprint Sensor, Front Camera, Touch Screen, Wi-Fi Capable 
+SIM Card Slot: Dual SIM (SIM + eSIM) 
+Screen Size: 5.8 in 
+Camera Resolution: 12.0 MP 
+Connectivity: 4G, Bluetooth, GPS
+
+price
+800
+
+stock
+10
+
+category
+Smartphone
+-----------------------------------------------------------------------------------------------
+name
+Apple iPhone 11 128GB Black
+
+description
+Operating System: iOS
+Features: 4G Data Capable, E-mail Access, 4K Video Recording, Accelerometer, Bluetooth Enabled, Camera, Fingerprint Sensor, Front Camera, Touch Screen, Wi-Fi Capable
+SIM Card Slot: Dual SIM (SIM + eSIM)
+Screen Size: 5.8 in
+Camera Resolution: 12.0 MP
+Connectivity: 4G, Bluetooth, GPS
+
+price 
+350
+
+stock
+8
+
+category
+Smartphone

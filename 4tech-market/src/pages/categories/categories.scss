@@ -1,0 +1,45 @@
+.categories {
+    display: flex;
+    background-color: #132a13;
+    height: 100%;
+
+    &__list {
+        flex: 1;
+        height: 100%;
+
+        &__container {
+            background-color: #31572c;
+            padding: 30px;
+            height: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 100%;
+
+                li {
+                    background-color: #90a955;
+                    font-size: 2rem;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__subCategories {
+        flex: 5;
+        background-color: #adc178;
+
+
+        &__container {
+            background-color: #f0ead2;
+            display: grid;
+
+            .subCategory {
+                background-color: #fff;
+            }
+        }
+    }
+}

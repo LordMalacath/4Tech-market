@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 export default function BusketBtn() {
-    const { badgeCount } = useSelector(state => state.basket)
+    const { badgeCount } = useSelector(state => state.basket);
+
     return (
         <Link to={"/basket"}>
             <div className='busketBtn'>

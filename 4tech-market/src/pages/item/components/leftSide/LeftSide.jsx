@@ -1,17 +1,16 @@
-import ImgList from "./imgList/Imglist";
 import ImgSlider from "./imgSlider/ImgSlider";
 
-export default function LeftSide() {
+export default function LeftSide({ imgCollection }) {
 
     return (
         <div className='preview__left'>
             <div className='imgContainer'>
                 <div className='imgContainer__slider'>
-                    <ImgSlider />
+                    <ImgSlider imgCollection={imgCollection} />
                 </div>
-                <div className='imgContainer__list'>
-                    <ImgList />
-                </div>
+                {/* <div className='imgContainer__list'>
+                    <ImgList imgCollection={imgCollection} />
+                </div> */}
             </div>
         </div>
     )

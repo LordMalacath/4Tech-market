@@ -1,6 +1,6 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useDispatch } from 'react-redux';
-import { removeItemFromBasket, setBadgeCount } from 'redux/slices/basketSlice';
+import { removeItemFromBasket, setBadgeCount, setTotalPayment } from 'redux/slices/basketSlice';
 
 
 export default function DeleteItemBtn({ name }) {
@@ -8,6 +8,7 @@ export default function DeleteItemBtn({ name }) {
     const handleClick = () => {
         dispatch(removeItemFromBasket(name));
         dispatch(setBadgeCount());
+        dispatch(setTotalPayment());
     }
 
     return (

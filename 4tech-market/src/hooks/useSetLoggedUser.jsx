@@ -18,9 +18,9 @@ export function useSetLoggedUser() {
                     emailVerified: user.emailVerified,
                     phoneNumber: user.phoneNumber,
                 }));
-                dispatch(fetchUserData(user.uid))
+                dispatch(fetchUserData(user.uid));
             }
-        })
-        return () => { unsub() }
+        });
+        return () => { unsub() };
     }, [])
 };

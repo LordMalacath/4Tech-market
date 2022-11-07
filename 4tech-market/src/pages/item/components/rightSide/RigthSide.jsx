@@ -2,7 +2,8 @@ import AddWish from "components/addWish/AddWish";
 import BuyBtn from "components/buyBtn/BuyBtn";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
-export default function RightSide() {
+export default function RightSide({ item }) {
+    const description = item.description.split("//")
 
     return (
         <div className='preview__right'>
@@ -12,12 +13,14 @@ export default function RightSide() {
                     In Stock
                 </div>
                 <div className="infoContainer__buy buy">
-                    <div className="buy__price">100$</div>
-                    <BuyBtn />
+                    <div className="buy__price">{item.price}$</div>
+                    <BuyBtn data={item} />
                     <AddWish />
                 </div>
                 <div className="infoContainer__description">
-                    description
+                    {description.map((item, index) =>
+                        <p key={index}>{item}</p>
+                    )}
                 </div>
             </div>
         </div>

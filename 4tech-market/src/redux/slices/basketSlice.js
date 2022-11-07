@@ -1,26 +1,33 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { db } from "api/firebase/firebase";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 
 
 export const fetchBusketItems = createAsyncThunk(
     'basket/fetchBusketItems',
-    async (name) => {
+    async ({ name, amount }, { dispatch }) => {
         try {
-            const ref = collection(db, "store");
-            const q = query(ref, where("name", "==", name))
-            const itemsCollection = await getDocs(q);
-            const data = [];
-            itemsCollection.forEach((item) => {
-                data.push(item.data())
-            })
-            return data
+            const ref = doc(db, "store", name);
+            await getDoc(ref)
+                .then(res => res.data())
+                .then(item => {
+                    dispatch(setItemIntoBusket(
+                        {
+                            name: item.name,
+                            price: item.price,
+                            stock: item.stock,
+                            imgURL: item.imgURL,
+                            amount,
+                        }
+                    ));
+                    dispatch(setTotalPayment());
+                    dispatch(setBadgeCount());
+                })
         } catch (error) {
             console.log(error)
         }
     }
 );
-
 
 export const basketSlice = createSlice({
     name: 'basket',
@@ -28,6 +35,7 @@ export const basketSlice = createSlice({
         totalPayment: 0,
         badgeCount: 0,
         basketList: [],
+        loading: false,
     },
     reducers: {
         setItemIntoBusket: (state, action) => {
@@ -49,9 +57,6 @@ export const basketSlice = createSlice({
                 return item
             })
         },
-        setItemPrice: (state, action) => {
-
-        },
         setTotalPayment: (state) => {
             let total = 0;
             for (let i = 0; i < state.basketList.length; i++) {
@@ -64,9 +69,12 @@ export const basketSlice = createSlice({
         },
     },
     extraReducers: {
-        [fetchBusketItems.fulfilled]: (state, action) => {
-
+        [fetchBusketItems.pending]: (state) => {
+            state.loading = true;
         },
+        [fetchBusketItems.fulfilled]: (state) => {
+            state.loading = false;
+        }
     }
 })
 

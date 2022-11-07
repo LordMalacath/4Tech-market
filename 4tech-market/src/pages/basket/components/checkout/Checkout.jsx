@@ -13,7 +13,7 @@ export default function Checkout() {
     return (
         <div className='checkout' >
             <div className='checkout__counter'>
-                {totalPayment} $
+                {totalPayment}$
             </div>
             <CheckoutBtn handleOpen={handleOpen} />
             <Modal

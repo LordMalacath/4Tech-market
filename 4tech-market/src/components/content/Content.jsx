@@ -7,12 +7,13 @@ import './content.scss'
 
 export default function Content() {
     const { itemsCollection } = useSelector(state => state.categories);
-    const dispatch = useDispatch()
-    const category = useLocalStorageSubscriber("category")
+    const dispatch = useDispatch();
+    const category = useLocalStorageSubscriber("category");
 
     useEffect(() => {
         dispatch(fetchItemsCollection(category));
-    }, [category])
+    }, [category]);
+
     return (
         <div style={{ "flex": 5 }}>
             <div className='content vertical'>

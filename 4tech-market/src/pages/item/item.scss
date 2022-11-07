@@ -25,9 +25,6 @@
 
                 &__slider {
                     height: 100%;
-                    display: flex;
-                    border: 3px rgba(128, 128, 128, 0.5) solid;
-                    border-radius: 15px;
                     overflow: hidden;
 
                     .imgSlider {
@@ -35,15 +32,14 @@
                         padding: 20px 0;
                         display: flex;
                         height: 100%;
-                        position: relative;
+                        justify-content: space-between;
+                        align-items: center;
 
                         &__swap {
-                            z-index: 50;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            height: 100%;
-                            width: 20%;
+                            height: 80px;
+                            aspect-ratio: 1/1;
+                            border-radius: 50%;
+                            background-color: bisque;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -51,17 +47,7 @@
                             cursor: pointer;
                             font-size: 3rem;
                             font-weight: 800;
-                            color: rgba(255, 255, 255, 0.5);
-
-                        }
-
-                        .leftSwap {
-                            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-                        }
-
-                        .rightSwap {
-                            right: 0;
-                            background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+                            color: rgb(0, 0, 0);
                         }
 
                         &__item {
@@ -122,6 +108,12 @@
                     background-color: #2a9d8f;
                     height: 100%;
                     padding: 30px 60px;
+
+                    p {
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
                 }
             }
         }

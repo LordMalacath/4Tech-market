@@ -1,7 +1,7 @@
 
 # 4TECH devices shop
 
-Project of SPA online shop with google Firebase.
+Project of Single Page App online shop with google Firebase.
 
 
 

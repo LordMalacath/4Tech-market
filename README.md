@@ -30,10 +30,11 @@ Project of Single Page App online shop with google Firebase.
 I paid more attention to the logical part and functionality, and not to the design, so the appearance is not so good.
 ## Screenshots
 
-<img src="4tech-market/src/img/screenshots/изображение_2022-11-08_123927599.jpg" alt="App main page" title="App main page" width="600" height="300">
-![App category preview](https://photos.app.goo.gl/RhDzYhAyoLi8KjE77)
-![App item preview](https://photos.app.goo.gl/6tmvQUEeiYb2JaV87)
-![App shopping cart preview](https://photos.app.goo.gl/UFnKtrtoGY72bAVZ6)
+<img src="4tech-market/src/img/screenshots/изображение_2022-11-08_123927599.jpg" alt="App main page" title="App main page" width="426" height="240">
+<img src="4tech-market/src/img/screenshots/изображение_2022-11-08_124032646.jpg" alt="App category preview" title="App category preview" width="426" height="240">
+<img src="4tech-market/src/img/screenshots/изображение_2022-11-08_124052556.jpg" alt="App item preview" title="App item preview" width="426" height="240">
+<img src="4tech-market/src/img/screenshots/изображение_2022-11-08_124114958.jpg" alt="App shopping cart" title="App shopping cart" width="426" height="240">
+
 
 
 

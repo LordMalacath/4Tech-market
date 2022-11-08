@@ -30,7 +30,7 @@ Project of Single Page App online shop with google Firebase.
 I paid more attention to the logical part and functionality, and not to the design, so the appearance is not so good.
 ## Screenshots
 
-![App main page](https://photos.app.goo.gl/5oB4DKnqjMCjXgPv7)
+![App main page](4tech-market/src/img/screenshots/изображение_2022-11-08_123927599.jpg)
 ![App category preview](https://photos.app.goo.gl/RhDzYhAyoLi8KjE77)
 ![App item preview](https://photos.app.goo.gl/6tmvQUEeiYb2JaV87)
 ![App shopping cart preview](https://photos.app.goo.gl/UFnKtrtoGY72bAVZ6)

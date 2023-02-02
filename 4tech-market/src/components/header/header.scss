@@ -43,6 +43,7 @@ header {
                 gap: 20px;
 
                 &__input {
+                    position: relative;
                     background-color: #fff;
                     width: 400px;
                     padding-left: 10px;
@@ -63,6 +64,51 @@ header {
                         box-shadow: none;
                         flex: 1;
                     }
+
+                    &__results {
+                        position: absolute;
+                        width: 95%;
+                        height: auto;
+                        background: #899eef;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: 10px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .result {
+                            height: 72px;
+                            gap: 10px;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            padding-left: 10px;
+                            border: 2px solid grey;
+                            border-radius: 10px;
+                            z-index: 100;
+
+                            &__img {
+                                background-color: #fff;
+                                height: 64px;
+                                width: 64px;
+                                flex-shrink: 0;
+                                border-radius: 10px;
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+
+                            &__name {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+
                 }
 
                 &__btn {

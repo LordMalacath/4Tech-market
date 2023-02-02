@@ -1,3 +1,4 @@
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import Content from "components/content/Content";
 import Header from "components/header/Header";
 import SideBar from "components/side/SideBar";
@@ -8,7 +9,6 @@ import Item from "pages/item/Item";
 import MainPage from "pages/main/MainPage";
 import WishList from "pages/wishList/WishList";
 import { Outlet } from "react-router-dom";
-import { createBrowserRouter } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
 
 

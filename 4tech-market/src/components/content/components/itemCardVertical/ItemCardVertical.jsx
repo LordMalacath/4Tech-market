@@ -19,7 +19,7 @@ export default function ItemCardVertical({ data }) {
         dispatch(setItem(data));
         navigate(`/item/${data.name}`);
     };
-    const description = data.description.split("//")
+    const description = data.description.split("//");
 
     return (
         <div className='itemCardContainer'>

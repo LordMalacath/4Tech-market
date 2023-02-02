@@ -1,7 +1,7 @@
-import { useLocalStorageSubscriber } from 'hooks/useLocalStorageSubscriber';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchLastViewedItem } from 'redux/slices/itemSlice';
+import { useLocalStorageSubscriber } from 'hooks/useLocalStorageSubscriber';
 import LeftSide from './components/leftSide/LeftSide'
 import RightSide from './components/rightSide/RigthSide'
 import './item.scss'

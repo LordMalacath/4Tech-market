@@ -6,7 +6,7 @@ export default function AddItem() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm({ mode: 'onBlur' });
     const onSubmit = data => {
         addItemIntoStock(data);
-        reset()
+        reset();
     };
 
     return (

@@ -8,7 +8,6 @@ import Categories from "pages/categories/Categories";
 import Item from "pages/item/Item";
 import MainPage from "pages/main/MainPage";
 import WishList from "pages/wishList/WishList";
-import { Outlet } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
 
 
